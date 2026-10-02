@@ -444,7 +444,8 @@ Run:
 npm run dev
 
 The frontend will start on:
-http://localhost:5174
+http://localhost:5173
+
 
 🔐 Database Configuration
 The backend uses MySQL configuration in:
@@ -471,7 +472,7 @@ with the local MySQL password.
 The actual password should not be shared publicly or uploaded to GitHub.
 📡 Application URLs
 Frontend
-http://localhost:5174
+http://localhost:5173
 
 Backend
 http://localhost:8080
