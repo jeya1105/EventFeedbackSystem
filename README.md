@@ -594,3 +594,7 @@ The major learning outcomes include:
 The FullStack Event Feedback Management System successfully demonstrates the development of a complete full-stack web application using React.js, Spring Boot, and MySQL.
 The project covers the complete workflow from creating a user-friendly frontend and collecting feedback to processing the feedback through REST APIs, storing it in a MySQL database, retrieving the stored information, and displaying it back to users.
 This project provides practical experience in frontend development, backend API development, database integration, REST communication, validation, debugging, and end-to-end application testing.
+
+## Demo Video
+
+[Watch Event Feedback Management System Demo](https://drive.google.com/file/d/1orwCBCx4B8KbQSBUA3FGf5uYyHAf-gY5/view?usp=sharing)
