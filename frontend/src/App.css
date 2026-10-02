@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #1e3a8a;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bfdbfe;
+}
+
+/* =========================
+   COMMON PAGE
+========================= */
+
+.page {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.page h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+.page p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* =========================
+   EVENTS
+========================= */
+
+.event-card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+.event-card h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.event-card p {
+  color: #555;
+}
+
+/* =========================
+   FEEDBACK FORM
+========================= */
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+form button {
+  margin-top: 25px;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   SUBMITTED FEEDBACK LIST
+========================= */
+
+.feedback-list {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.feedback-list h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.feedback-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.feedback-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+.feedback-card h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #1e3a8a;
+  font-size: 24px;
+}
+
+.feedback-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.feedback-card strong {
+  color: #374151;
+}
+
+.rating {
+  font-weight: bold;
+  color: #e6a700;
+}
+
+/* =========================
+   SUCCESS / ERROR MESSAGE
+========================= */
+
+.success-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #15803d;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.error-message {
+  margin-top: 20px;
+  text-align: center;
+  color: #dc2626;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px 25px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .page {
+    margin: 25px auto;
+    padding: 20px;
+  }
+
+  .page h1 {
+    font-size: 32px;
+  }
+
+  .feedback-list {
+    margin: 25px auto;
+    padding: 20px;
+  }
+
+  .feedback-list h1 {
+    font-size: 30px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
